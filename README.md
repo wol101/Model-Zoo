@@ -1,0 +1,2 @@
+# Model-Zoo
+This is where I put various simulation models. I don't guarantee that they will all work with the latest versions of GaitSym, but they worked at some point in time and they can all be made to work fairly easily. GaitSym2019 has some significant changes from earlier versions, and converting these older models is more work. Generally you can get a long way by saving the earlier model in World format and then using the GaitSYm2019/scripts/convert_old_model.py script. 
