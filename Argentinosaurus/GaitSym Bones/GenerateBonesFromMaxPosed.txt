@@ -1,0 +1,65 @@
+# This file generates the properly scaled and mirrored and combined bodies from the 3DS Max version
+
+CreateNew body
+CreateNew body20
+CreateNew girdles
+
+ReadOBJFile as "../3DS Max Posed Elements/Axial Skeleton.obj"
+Concatenate body as
+
+ReadOBJFile as20 "../3DS Max Posed Elements/Axial Skeleton 20%.obj"
+Concatenate body20 as20
+
+ReadOBJFile lhp "../3DS Max Posed Elements/Left Hemi-Pelvis.obj"
+Concatenate body lhp
+Concatenate body20 lhp
+Concatenate girdles lhp
+Mirror lhp 0 1 0
+Concatenate body lhp
+Concatenate body20 lhp
+Concatenate girdles lhp
+
+ReadOBJFile ls "../3DS Max Posed Elements/Left Scapula.obj"
+Concatenate body ls
+Concatenate body20 ls
+Concatenate girdles ls
+Mirror ls 0 1 0
+Concatenate body ls
+Concatenate body20 ls
+Concatenate girdles ls
+
+WriteOBJFile body "AxialSkeleton.obj"
+WriteOBJFile body20 "AxialSkeleton20%.obj"
+WriteOBJFile girdles "LimbGirdles.obj"
+
+ReadOBJFile lf "../3DS Max Posed Elements/Left Femur.obj"
+WriteOBJFile lf "LeftFemur.obj"
+Mirror lf 0 1 0
+WriteOBJFile lf "RightFemur.obj"
+
+ReadOBJFile ltf "../3DS Max Posed Elements/Left Tibia+Fibula.obj"
+WriteOBJFile ltf "LeftTibia+Fibula.obj"
+Mirror ltf 0 1 0
+WriteOBJFile ltf "RightTibia+Fibula.obj"
+
+ReadOBJFile lfo "../3DS Max Posed Elements/Left Foot.obj"
+WriteOBJFile lfo "LeftFoot.obj"
+Mirror lfo 0 1 0
+WriteOBJFile lfo "RightFoot.obj"
+
+ReadOBJFile lh "../3DS Max Posed Elements/Left Humerus.obj"
+WriteOBJFile lh "LeftHumerus.obj"
+Mirror lh 0 1 0
+WriteOBJFile lh "RightHumerus.obj"
+
+ReadOBJFile lru "../3DS Max Posed Elements/Left Radius+Ulna.obj"
+WriteOBJFile lru "LeftRadius+Ulna.obj"
+Mirror lru 0 1 0
+WriteOBJFile lru "RightRadius+Ulna.obj"
+
+ReadOBJFile lha "../3DS Max Posed Elements/Left Hand.obj"
+WriteOBJFile lha "LeftHand.obj"
+Mirror lha 0 1 0
+WriteOBJFile lha "RightHand.obj"
+
+

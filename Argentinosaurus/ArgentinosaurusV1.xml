@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+<GAITSYMODE>
+  <STATE SimulationTime="0"/>
+  <IOCONTROL OldStyleInputs="false" OldStyleOutputs="false"/>
+  <GLOBAL IntegrationStepSize="1e-4" GravityVector="0.0 0.0 -9.81" ERP="0.2" CFM="1e-10" ContactMaxCorrectingVel="100" ContactSurfaceLayer="0.001" AllowInternalCollisions="false" BMR="0" TimeLimit="24" MetabolicEnergyLimit="0" MechanicalEnergyLimit="0" FitnessType="DistanceTravelled" DistanceTravelledBodyID="Trunk"/>
+  <INTERFACE EnvironmentAxisSize="1 1 1" EnvironmentColour="0.5 0.5 1.0 1.0" BodyAxisSize="0.1 0.1 0.1" BodyColour=".275 .725 .451 1.0" JointAxisSize="0.05 0.05 0.05" JointColour="0 1 0 1" GeomColour="0 0 1 1" StrapColour="1 0 0 1" StrapRadius="0.005" StrapForceColour="1 0 0 0.5" StrapForceRadius="0.01" StrapForceScale="0.000001" StrapCylinderColour="0 1 1 1" StrapCylinderLength="0.05" DrawingOrder="Environment Joint Muscle Geom Body" TrackBodyID="Trunk"/>
+  <ENVIRONMENT Plane="0 0 1 0"/>
+  <BODY ID="LeftArm" GraphicFile="Left_Arm.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="-2.7295057149700037 -1.5097809722866011 -2.2378922138442303" Mass="4323.7168387541369" MOI="2735.8809042914613 1881.9913415869189 2120.445483159162 230.41189621806038 -458.10840004153192 -26.539899046578739" Density="-1" Position="World 2.7295057149700037 1.5097809722866011 3.6008072138442304" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="LeftFoot" GraphicFile="Left_Foot.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="3.526524474751572 -1.5294145697362209 0.83167102792930625" Mass="783.85312751245738" MOI="188.56196739170196 178.06702788529489 182.07249439195868 25.969082528364925 68.807050752330838 -35.831920849943842" Density="-1" Position="World -3.526524474751572 1.5294145697362209 0.53124397207069385" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="LeftForearm" GraphicFile="Left_Forearm.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="-2.6410226438931206 -1.6314743859725618 -0.54873078372044826" Mass="2077.5872901584921" MOI="597.68276682400631 769.97224908867577 500.82603635284983 29.167937021100105 122.21298881056036 -34.354040146715647" Density="-1" Position="World 2.6410226438931206 1.6314743859725618 1.9116457837204484" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="LeftHand" GraphicFile="Left_Hand.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="-2.9411097749926207 -1.4567753393086837 0.73846001795032212" Mass="267.05313731260594" MOI="25.517843095884967 20.919723733089398 14.063542326897441 -0.079975303819023749 0.27187611949877605 -0.50510530463984182" Density="-1" Position="World 2.9411097749926207 1.4567753393086837 0.62445498204967798" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="LeftShank" GraphicFile="Left_Shank.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="3.6582437548202908 -1.7013224912887399 -0.70150955465165754" Mass="2797.4040399547853" MOI="1006.7178160001727 1030.9657531962521 782.12250970188472 -77.865149781812391 -65.728287124644183 14.790382452070173" Density="-1" Position="World -3.6582437548202908 1.7013224912887399 2.0644245546516578" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="LeftThigh" GraphicFile="Left_Thigh.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="3.3756229671562847 -1.4888346129123102 -2.7572869587846545" Mass="6223.3061787649676" MOI="4670.190224728296 3868.0318044964297 2812.4272938691111 42.852404493441519 -300.47183036187374 431.82198381267779" Density="-1" Position="World -3.3756229671562847 1.4888346129123102 4.120201958784655" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="RightArm" GraphicFile="Right_Arm.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="-2.7295057185698055 1.5097810171552599 -2.2378922194308073" Mass="4323.7167114463064" MOI="2735.8808575362546 1881.9912661198912 2120.4454825687098 -230.4119237552313 -458.1083979523039 26.540019064076347" Density="-1" Position="World 2.7295057185698055 -1.5097810171552599 3.6008072194308074" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="RightFoot" GraphicFile="Right_Foot.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="3.5265244571000354 1.5294145406793074 0.83167105097642779" Mass="783.85305014789287" MOI="188.56192424561925 178.06702167484485 182.07245757970063 -25.969073475740501 68.807048153949623 35.831903646221718" Density="-1" Position="World -3.5265244571000354 -1.5294145406793074 0.5312439490235723" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="RightForearm" GraphicFile="Right_Forearm.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="-2.6410226927572982 1.6314744162742594 -0.54873083135181067" Mass="2077.586931279694" MOI="597.6826552671838 769.97215204326926 500.82588038325804 -29.167970239262111 122.21292261274394 34.354050210672384" Density="-1" Position="World 2.6410226927572982 -1.6314744162742594 1.9116458313518108" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="RightHand" GraphicFile="Right_Hand.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="-2.9411097662860075 1.4567752717133382 0.73846001287762153" Mass="267.05306435667706" MOI="25.517833631333016 20.91971899898039 14.063534031606432 0.079974283997613027 0.27187575300756867 0.50510996495952176" Density="-1" Position="World 2.9411097662860075 -1.4567752717133382 0.62445498712237857" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="RightShank" GraphicFile="Right_Shank.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="3.6582437769570499 1.7013224484739302 -0.70150955575068807" Mass="2797.4040430296527" MOI="1006.7178800494319 1030.9657914528109 782.12247387847833 77.865141995059403 -65.728258326609293 -14.790392333555396" Density="-1" Position="World -3.6582437769570499 -1.7013224484739302 2.064424555750688" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="RightThigh" GraphicFile="Right_Thigh.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="3.3756229047392741 1.4888345607229934 -2.7572870057962269" Mass="6223.3063569228734" MOI="4670.1901062513552 3868.0321826064364 2812.4273397742945 -42.852577125004935 -300.4719647974112 -431.8220108269669" Density="-1" Position="World -3.3756229047392741 -1.4888345607229934 4.1202020057962265" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <BODY ID="Trunk" GraphicFile="HTT.obj" Scale="1.0" PositionLowBound="-10 -5 0" PositionHighBound="1000 5 10" Clockwise="true" Offset="-6.7680089655180421e-08 -3.6938493257127311e-08 -3.7735694140875347" Mass="85323.285880697833" MOI="120179.73373499073 1536879.9568173368 1508148.6487104485 -11153.882216654945 -28846.288200435894 958.03655869867623" Density="-1" Position="World 6.7680089655180421e-08 3.6938493257127311e-08 5.1364844140875352" Quaternion="World 1 0 0 0" LinearVelocity="0 0 0" AngularVelocity="0 0 0"/>
+  <JOINT ID="LeftAnkleJoint" Type="Hinge" Body1ID="LeftShank" Body2ID="LeftFoot" ParamLoStop="-22.5d" ParamHiStop="22.5d" HingeAnchor="LeftShank -0.24527224517970936 -0.0013224912887399576 -0.98952555465165748" HingeAxis="LeftShank 0 1 0" Body2HingeAnchor="LeftFoot -0.37699152524842816 0.17058543026377904 0.54365502792930631" Body2HingeAxis="LeftFoot 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="LeftElbowJoint" Type="Hinge" Body1ID="LeftArm" Body2ID="LeftForearm" ParamLoStop="-15d" ParamHiStop="45d" HingeAnchor="LeftArm -0.61123771497000368 0.040219027713398914 -0.81858221384423024" HingeAxis="LeftArm 0 1 0" Body2HingeAnchor="LeftForearm -0.52275464389312054 -0.081474385972561736 0.87057921627955182" Body2HingeAxis="LeftForearm 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="LeftHipJoint" Type="Hinge" Body1ID="Trunk" Body2ID="LeftThigh" ParamLoStop="-30d" ParamHiStop="30d" HingeAnchor="Trunk -3.3036450676800895 1.2499999630615068 0.19519358591246538" HingeAxis="Trunk 0 1 0" Body2HingeAnchor="LeftThigh 0.071977967156284794 -0.23883461291231023 1.2114760412153456" Body2HingeAxis="LeftThigh 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="LeftKneeJoint" Type="Hinge" Body1ID="LeftThigh" Body2ID="LeftShank" ParamLoStop="-60d" ParamHiStop="-0d" HingeAnchor="LeftThigh -0.043382032843715113 -0.038834612912310273 -1.0034329587846544" HingeAxis="LeftThigh 0 1 0" Body2HingeAnchor="LeftShank 0.239238754820291 -0.25132249128873996 1.0523444453483424" Body2HingeAxis="LeftShank 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="LeftShoulderJoint" Type="Hinge" Body1ID="Trunk" Body2ID="LeftArm" ParamLoStop="-15d" ParamHiStop="45d" HingeAnchor="Trunk 3.0872909323199105 1.0999999630615069 -0.68154141408753466" HingeAxis="Trunk 0 1 0" Body2HingeAnchor="LeftArm 0.35778528502999629 -0.40978097228660104 0.85413578615576968" Body2HingeAxis="LeftArm 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="LeftWristJoint" Type="Hinge" Body1ID="LeftForearm" Body2ID="LeftHand" ParamLoStop="-10d" ParamHiStop="35d" HingeAnchor="LeftForearm 0.37705235610687948 -0.18147438597256182 -0.95210678372044821" HingeAxis="LeftForearm 0 1 0" Body2HingeAnchor="LeftHand 0.076965225007379345 -0.0067753393086837921 0.33508401795032217" Body2HingeAxis="LeftHand 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="RightAnkleJoint" Type="Hinge" Body1ID="RightShank" Body2ID="RightFoot" ParamLoStop="-22.5d" ParamHiStop="22.5d" HingeAnchor="RightShank -0.24527222304295027 0.00132244847393026 -0.98952555575068812" HingeAxis="RightShank 0 1 0" Body2HingeAnchor="RightFoot -0.37699154289996484 -0.17058545932069258 0.54365505097642775" Body2HingeAxis="RightFoot 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="RightElbowJoint" Type="Hinge" Body1ID="RightArm" Body2ID="RightForearm" ParamLoStop="-15d" ParamHiStop="45d" HingeAnchor="RightArm -0.61123771856980547 -0.040218982844740125 -0.81858221943080722" HingeAxis="RightArm 0 1 0" Body2HingeAnchor="RightForearm -0.52275469275729813 0.081474416274259331 0.87057916864818941" Body2HingeAxis="RightForearm 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="RightHipJoint" Type="Hinge" Body1ID="Trunk" Body2ID="RightThigh" ParamLoStop="-30d" ParamHiStop="30d" HingeAnchor="Trunk -3.3036450676800895 -1.2500000369384932 0.19519358591246538" HingeAxis="Trunk 0 1 0" Body2HingeAnchor="RightThigh 0.071977904739274123 0.23883456072299336 1.2114759942037732" Body2HingeAxis="RightThigh 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="RightKneeJoint" Type="Hinge" Body1ID="RightThigh" Body2ID="RightShank" ParamLoStop="-60d" ParamHiStop="-0d" HingeAnchor="RightThigh -0.043382095260725784 0.038834560722993405 -1.0034330057962269" HingeAxis="RightThigh 0 1 0" Body2HingeAnchor="RightShank 0.23923877695705009 0.25132244847393026 1.0523444442493119" Body2HingeAxis="RightShank 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="RightShoulderJoint" Type="Hinge" Body1ID="Trunk" Body2ID="RightArm" ParamLoStop="-15d" ParamHiStop="45d" HingeAnchor="Trunk 3.0872909323199105 -1.1000000369384932 -0.68154141408753466" HingeAxis="Trunk 0 1 0" Body2HingeAnchor="RightArm 0.3577852814301945 0.40978101715525983 0.8541357805691927" Body2HingeAxis="RightArm 0 1 0" StartAngleReference="0"/>
+  <JOINT ID="RightWristJoint" Type="Hinge" Body1ID="RightForearm" Body2ID="RightHand" ParamLoStop="-10d" ParamHiStop="35d" HingeAnchor="RightForearm 0.37705230724270189 0.18147441627425942 -0.95210683135181062" HingeAxis="RightForearm 0 1 0" Body2HingeAnchor="RightHand 0.076965233713992554 0.006775271713338249 0.33508401287762157" Body2HingeAxis="RightHand 0 1 0" StartAngleReference="0"/>
+  <GEOM ID="LeftFootDistalContact" Type="Sphere" BodyID="LeftFoot" Radius="0.050000000000000003" SpringConstant="1e7" DampingConstant="1e6" Mu="1.0" Abort="false" Position="LeftFoot 0.706208474751572 0.020585430263779125 -0.4812439720706938" Quaternion="LeftFoot 1 0 0 0"/>
+  <GEOM ID="LeftFootProximalContact" Type="Sphere" BodyID="LeftFoot" Radius="0.050000000000000003" SpringConstant="1e7" DampingConstant="1e6" Mu="1.0" Abort="false" Position="LeftFoot 0.15695447475157209 0.020585430263779125 -0.45569697207069382" Quaternion="LeftFoot 1 0 0 0"/>
+  <GEOM ID="LeftHandContact" Type="Sphere" BodyID="LeftHand" Radius="0.050000000000000003" SpringConstant="1e7" DampingConstant="1e6" Mu="1.0" Abort="false" Position="LeftHand 0.041343225007379303 -0.02677533930868381 -0.42547998204967785" Quaternion="LeftHand 1 0 0 0"/>
+  <GEOM ID="RightFootDistalContact" Type="Sphere" BodyID="RightFoot" Radius="0.050000000000000003" SpringConstant="1e7" DampingConstant="1e6" Mu="1.0" Abort="false" Position="RightFoot 0.70620845710003533 -0.020585459320692667 -0.48124394902357226" Quaternion="RightFoot 1 0 0 0"/>
+  <GEOM ID="RightFootProximalContact" Type="Sphere" BodyID="RightFoot" Radius="0.050000000000000003" SpringConstant="1e7" DampingConstant="1e6" Mu="1.0" Abort="false" Position="RightFoot 0.15695445710003542 -0.020585459320692667 -0.45569694902357227" Quaternion="RightFoot 1 0 0 0"/>
+  <GEOM ID="RightHandContact" Type="Sphere" BodyID="RightHand" Radius="0.050000000000000003" SpringConstant="1e7" DampingConstant="1e6" Mu="1.0" Abort="false" Position="RightHand 0.041343233713992511 0.026775271713338267 -0.42547998712237844" Quaternion="RightHand 1 0 0 0"/>
+  <MUSCLE ID="LeftAnkleExt" Type="MinettiAlexander" OriginBodyID="LeftShank" InsertionBodyID="LeftFoot" ForcePerUnitArea="300000" PCA="17.373166959999999" FibreLength="0.160556" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="LeftShank" TendonLength="1.534143" InitialFibreLength="1" Origin="LeftShank -0.2687562451797092 -0.10132249128873982 0.26949044534834243" Insertion="LeftFoot -0.53047552524842834 0.07058543026377917 0.12167102792930629" CylinderPosition="LeftShank -0.24575624517970907 -0.0013224912887399576 -0.98950955465165746" CylinderRadius="0.20000000000000001" CylinderQuaternion="LeftShank 0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="LeftAnkleFlex" Type="MinettiAlexander" OriginBodyID="LeftShank" InsertionBodyID="LeftFoot" ForcePerUnitArea="300000" PCA="5.1292179840000003" FibreLength="0.36254599999999998" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.97850599999999999" InitialFibreLength="1" Origin="LeftShank 0.48924375482029081 -0.091322491288739815 0.044490445348342456" Insertion="LeftFoot 0.037524474751572168 0.080585430263779179 0.2636710279293063"/>
+  <MUSCLE ID="LeftElbowExt" Type="MinettiAlexander" OriginBodyID="LeftArm" InsertionBodyID="LeftForearm" ForcePerUnitArea="300000" PCA="8.9633741899999997" FibreLength="0.31119599999999997" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="LeftArm" TendonLength="1.8601319999999999" InitialFibreLength="1" Origin="LeftArm -0.15750571497000365 -0.30978097228660118 0.37410778615576978" Insertion="LeftForearm -0.78902264389312049 -0.11147438597256176 0.22326921627955176" CylinderPosition="LeftArm -0.61150571497000383 0.040219027713398914 -0.81889221384423028" CylinderRadius="0.29999999999999999" CylinderQuaternion="LeftArm 0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="LeftElbowFlex" Type="MinettiAlexander" OriginBodyID="LeftArm" InsertionBodyID="LeftForearm" ForcePerUnitArea="300000" PCA="3.4538700740000001" FibreLength="0.53840399999999999" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.61811799999999995" InitialFibreLength="1" Origin="LeftArm 0.19049428502999621 -0.24978097228660112 0.10410778615576977" Insertion="LeftForearm -0.056022643893120616 -0.10147438597256175 0.57126921627955185"/>
+  <MUSCLE ID="LeftHipExt" Type="MinettiAlexander" OriginBodyID="Trunk" InsertionBodyID="LeftThigh" ForcePerUnitArea="300000" PCA="2.932887021" FibreLength="0.95106500000000005" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.80172549999999998" InitialFibreLength="1" Origin="Trunk -5.0040000676800895 0.89999996306150676 0.22643058591246534" Insertion="LeftThigh -0.21937703284371546 -0.16883461291231017 0.23671304121534575"/>
+  <MUSCLE ID="LeftHipFlex" Type="MinettiAlexander" OriginBodyID="Trunk" InsertionBodyID="LeftThigh" ForcePerUnitArea="300000" PCA="2.2083223539999999" FibreLength="0.84207699999999996" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.67690550000000005" InitialFibreLength="1" Origin="Trunk -1.9980000676800898 0.89999996306150676 0.22643058591246534" Insertion="LeftThigh 0.26562296715628486 -0.16883461291231017 0.23671304121534575"/>
+  <MUSCLE ID="LeftKneeExt" Type="MinettiAlexander" OriginBodyID="LeftThigh" InsertionBodyID="LeftShank" ForcePerUnitArea="300000" PCA="8.9554891150000007" FibreLength="0.31147000000000002" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="LeftThigh" TendonLength="1.816462" InitialFibreLength="1" Origin="LeftThigh 0.27762296715628487 -0.14883461291231015 0.094713041215345406" Insertion="LeftShank 0.52424375482029095 -0.081322491288739807 0.19849044534834248" CylinderPosition="LeftThigh -0.043377032843715302 -0.038834612912310273 -1.0032869587846545" CylinderRadius="0.29999999999999999" CylinderQuaternion="LeftThigh -0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="LeftKneeFlex" Type="MinettiAlexander" OriginBodyID="LeftThigh" InsertionBodyID="LeftShank" ForcePerUnitArea="300000" PCA="3.3100169689999999" FibreLength="0.56180300000000005" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.82200150000000005" InitialFibreLength="1" Origin="LeftThigh -0.23137703284371547 -0.13883461291231014 0.023713041215345676" Insertion="LeftShank -0.23275624517970916 -0.10132249128873982 0.45849044534834238"/>
+  <MUSCLE ID="LeftShoulderExt" Type="MinettiAlexander" OriginBodyID="Trunk" InsertionBodyID="LeftArm" ForcePerUnitArea="300000" PCA="9.5094082530000001" FibreLength="0.293327" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="Trunk" TendonLength="1.4294515000000001" InitialFibreLength="1" Origin="Trunk 3.5119999323199105 0.49999996306150674 0.22843058591246512" Insertion="LeftArm 0.26749428502999617 -0.27978097228660115 0.25810778615576968" CylinderPosition="Trunk 3.0869999323199107 1.0999999630615069 -0.68156941408753458" CylinderRadius="0.29999999999999999" CylinderQuaternion="Trunk -0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="LeftShoulderFlex" Type="MinettiAlexander" OriginBodyID="Trunk" InsertionBodyID="LeftArm" ForcePerUnitArea="300000" PCA="3.7088665299999999" FibreLength="0.50138700000000003" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="1.3081885" InitialFibreLength="1" Origin="Trunk 1.5249999323199102 0.99999996306150674 0.21543058591246522" Insertion="LeftArm -0.041505714970003549 -0.3397809722866012 0.5411077861557696"/>
+  <MUSCLE ID="LeftWristExt" Type="MinettiAlexander" OriginBodyID="LeftForearm" InsertionBodyID="LeftHand" ForcePerUnitArea="300000" PCA="8.9905020499999999" FibreLength="0.31025700000000001" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="LeftForearm" TendonLength="1.1664315000000001" InitialFibreLength="1" Origin="LeftForearm -0.6350226438931208 -0.12147438597256177 0.018269216279551692" Insertion="LeftHand -0.2661097749926209 -0.02677533930868381 0.082460017950322095" CylinderPosition="LeftForearm 0.37697735610687921 -0.18147438597256182 -0.95173078372044828" CylinderRadius="0.20000000000000001" CylinderQuaternion="LeftForearm 0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="LeftWristFlex" Type="MinettiAlexander" OriginBodyID="LeftForearm" InsertionBodyID="LeftHand" ForcePerUnitArea="300000" PCA="10.88853963" FibreLength="0.17078299999999999" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="LeftForearm" TendonLength="1.3781505000000001" InitialFibreLength="1" Origin="LeftForearm 0.059977356106879487 -0.10147438597256175 0.33926921627955176" Insertion="LeftHand 0.31289022500737929 -0.016775339308683801 0.13446001795032214" CylinderPosition="LeftForearm 0.37697735610687921 -0.18147438597256182 -0.95173078372044828" CylinderRadius="0.20000000000000001" CylinderQuaternion="LeftForearm -0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="RightAnkleExt" Type="MinettiAlexander" OriginBodyID="RightShank" InsertionBodyID="RightFoot" ForcePerUnitArea="300000" PCA="17.373166959999999" FibreLength="0.160556" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="RightShank" TendonLength="1.534143" InitialFibreLength="1" Origin="RightShank -0.26857422304294998 0.10132244847393013 0.2691544442493119" Insertion="RightFoot -0.53047154289996445 -0.070585459320692712 0.12185205097642782" CylinderPosition="RightShank -0.24527222304295027 0.00132244847393026 -0.98952555575068812" CylinderRadius="0.20000000000000001" CylinderQuaternion="RightShank 0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="RightAnkleFlex" Type="MinettiAlexander" OriginBodyID="RightShank" InsertionBodyID="RightFoot" ForcePerUnitArea="300000" PCA="5.1292179840000003" FibreLength="0.36254599999999998" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.97850599999999999" InitialFibreLength="1" Origin="RightShank 0.48882677695704979 0.091322448473930118 0.044300444249311899" Insertion="RightFoot 0.037578457100035489 -0.080585459320692721 0.26386505097642776"/>
+  <MUSCLE ID="RightElbowExt" Type="MinettiAlexander" OriginBodyID="RightArm" InsertionBodyID="RightForearm" ForcePerUnitArea="300000" PCA="8.9633741899999997" FibreLength="0.31119599999999997" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="RightArm" TendonLength="1.8601319999999999" InitialFibreLength="1" Origin="RightArm -0.15704171856980542 0.30978101715525996 0.37422078056919261" Insertion="RightForearm -0.78898569275729824 0.11147441627425936 0.22372116864818936" CylinderPosition="RightArm -0.61123771856980547 -0.040218982844740125 -0.81858221943080722" CylinderRadius="0.29999999999999999" CylinderQuaternion="RightArm 0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="RightElbowFlex" Type="MinettiAlexander" OriginBodyID="RightArm" InsertionBodyID="RightForearm" ForcePerUnitArea="300000" PCA="3.4538700740000001" FibreLength="0.53840399999999999" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.61811799999999995" InitialFibreLength="1" Origin="RightArm 0.19030628143019435 0.24978101715525991 0.10406078056919288" Insertion="RightForearm -0.055694692757298103 0.10147441627425935 0.57106916864818924"/>
+  <MUSCLE ID="RightHipExt" Type="MinettiAlexander" OriginBodyID="Trunk" InsertionBodyID="RightThigh" ForcePerUnitArea="300000" PCA="2.932887021" FibreLength="0.95106500000000005" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.80172549999999998" InitialFibreLength="1" Origin="Trunk -5.0037470676800897 -0.90000003693849329 0.22669658591246522" Insertion="RightThigh -0.21983209526072578 0.1688345607229933 0.23705699420377302"/>
+  <MUSCLE ID="RightHipFlex" Type="MinettiAlexander" OriginBodyID="Trunk" InsertionBodyID="RightThigh" ForcePerUnitArea="300000" PCA="2.2083223539999999" FibreLength="0.84207699999999996" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.67690550000000005" InitialFibreLength="1" Origin="Trunk -1.9978130676800898 -0.90000003693849329 0.22669658591246522" Insertion="RightThigh 0.265376904739274 0.1688345607229933 0.23705699420377302"/>
+  <MUSCLE ID="RightKneeExt" Type="MinettiAlexander" OriginBodyID="RightThigh" InsertionBodyID="RightShank" ForcePerUnitArea="300000" PCA="8.9554891150000007" FibreLength="0.31147000000000002" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="RightThigh" TendonLength="1.816462" InitialFibreLength="1" Origin="RightThigh 0.27721190473927404 0.14883456072299328 0.095043994203773075" Insertion="RightShank 0.52432977695705008 0.081322448473930109 0.19814744424931197" CylinderPosition="RightThigh -0.043382095260725784 0.038834560722993405 -1.0034330057962269" CylinderRadius="0.29999999999999999" CylinderQuaternion="RightThigh -0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="RightKneeFlex" Type="MinettiAlexander" OriginBodyID="RightThigh" InsertionBodyID="RightShank" ForcePerUnitArea="300000" PCA="3.3100169689999999" FibreLength="0.56180300000000005" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="0.82200150000000005" InitialFibreLength="1" Origin="RightThigh -0.23166709526072582 0.13883456072299327 0.02403799420377295" Insertion="RightShank -0.23307122304295014 0.10132244847393013 0.45850444424931203"/>
+  <MUSCLE ID="RightShoulderExt" Type="MinettiAlexander" OriginBodyID="Trunk" InsertionBodyID="RightArm" ForcePerUnitArea="300000" PCA="9.5094082530000001" FibreLength="0.293327" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="Trunk" TendonLength="1.4294515000000001" InitialFibreLength="1" Origin="Trunk 3.5115909323199106 -0.50000003693849326 0.22793758591246549" Insertion="RightArm 0.26749528143019452 0.27978101715525994 0.25843778056919264" CylinderPosition="Trunk 3.0872909323199105 -1.1000000369384932 -0.68154141408753466" CylinderRadius="0.29999999999999999" CylinderQuaternion="Trunk -0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="RightShoulderFlex" Type="MinettiAlexander" OriginBodyID="Trunk" InsertionBodyID="RightArm" ForcePerUnitArea="300000" PCA="3.7088665299999999" FibreLength="0.50138700000000003" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="TwoPoint" TendonLength="1.3081885" InitialFibreLength="1" Origin="Trunk 1.5246879323199103 -1.0000000369384932 0.2150735859124655" Insertion="RightArm -0.041258718569805453 0.33978101715525999 0.5414627805691925"/>
+  <MUSCLE ID="RightWristExt" Type="MinettiAlexander" OriginBodyID="RightForearm" InsertionBodyID="RightHand" ForcePerUnitArea="300000" PCA="8.9905020499999999" FibreLength="0.31025700000000001" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="RightForearm" TendonLength="1.1664315000000001" InitialFibreLength="1" Origin="RightForearm -0.63460869275729825 0.12147441627425937 0.017885168648189342" Insertion="RightHand -0.26572776628600758 0.026775271713338267 0.082923012877621494" CylinderPosition="RightForearm 0.37705230724270189 0.18147441627425942 -0.95210683135181062" CylinderRadius="0.20000000000000001" CylinderQuaternion="RightForearm 0.70710678118654757 0.70710678118654757 0 0"/>
+  <MUSCLE ID="RightWristFlex" Type="MinettiAlexander" OriginBodyID="RightForearm" InsertionBodyID="RightHand" ForcePerUnitArea="300000" PCA="10.88853963" FibreLength="0.17078299999999999" VMaxFactor="8.4000000000000004" SerialStrainAtFmax="0.059999999999999998" ParallelStrainAtFmax="0.6" ActivationK="0.17" ActivationKinetics="false" Strap="CylinderWrap" CylinderBodyID="RightForearm" TendonLength="1.3781505000000001" InitialFibreLength="1" Origin="RightForearm 0.060088307242701866 0.10147441627425935 0.33950416864818933" Insertion="RightHand 0.31318623371399257 0.016775271713338258 0.13438201287762153" CylinderPosition="RightForearm 0.37705230724270189 0.18147441627425942 -0.95210683135181062" CylinderRadius="0.20000000000000001" CylinderQuaternion="RightForearm -0.70710678118654757 0.70710678118654757 0 0"/>
+  
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftAnkleExtDriver"
+      Target="LeftAnkleExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftAnkleFlexDriver"
+      Target="LeftAnkleFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftElbowExtDriver"
+      Target="LeftElbowExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftElbowFlexDriver"
+      Target="LeftElbowFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftHipExtDriver"
+      Target="LeftHipExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftHipFlexDriver"
+      Target="LeftHipFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftKneeExtDriver"
+      Target="LeftKneeExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftKneeFlexDriver"
+      Target="LeftKneeFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftShoulderExtDriver"
+      Target="LeftShoulderExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftShoulderFlexDriver"
+      Target="LeftShoulderFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftWristExtDriver"
+      Target="LeftWristExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="LeftWristFlexDriver"
+      Target="LeftWristFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightAnkleExtDriver"
+      Target="RightAnkleExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightAnkleFlexDriver"
+      Target="RightAnkleFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightElbowExtDriver"
+      Target="RightElbowExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightElbowFlexDriver"
+      Target="RightElbowFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightHipExtDriver"
+      Target="RightHipExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightHipFlexDriver"
+      Target="RightHipFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightKneeExtDriver"
+      Target="RightKneeExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightKneeFlexDriver"
+      Target="RightKneeFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightShoulderExtDriver"
+      Target="RightShoulderExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightShoulderFlexDriver"
+      Target="RightShoulderFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightWristExtDriver"
+      Target="RightWristExt"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+  <DRIVER
+      Type="Cyclic"
+      ID="RightWristFlexDriver"
+      Target="RightWristFlex"
+      DurationValuePairs="
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+          1 0
+      "
+  />
+
+
+  
+</GAITSYMODE>
+
